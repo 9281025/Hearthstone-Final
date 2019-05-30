@@ -137,9 +137,9 @@ namespace Hearthstone
 
     public class Hero
     {
-        public string Name { get; set; }
-        public string HeroPower { get; set; }
-        public int Health { get; set; }
+        public static string Name { get; set; }
+        public static string HeroPower { get; set; }
+        public static int Health { get; set; }
 
         public Hero()
         {
