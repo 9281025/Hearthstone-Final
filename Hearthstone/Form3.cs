@@ -19,8 +19,17 @@ namespace Hearthstone
             {
                 RandomizeCards(i);
             }
-            Hero Hero = new Hero();
-            Hero.Name = 
+            string HeroName = Hero.Name;
+            int HeroHealth = Hero.Health;
+            string HeroPower = Hero.HeroPower;
+            btnUserHero.Text = HeroName + "\n" + "\n" + HeroPower;
+            lblUserHeroHealth.Text = "Health: " + Convert.ToString(HeroHealth);
+            int RandomNum = num.Next(1, 31);
+            btnUser1Hand.Text = CardDeck[RandomNum].Name + "\n" + "Attack: " + Convert.ToString(CardDeck[RandomNum].Attack) + "Health: " + Convert.ToString(CardDeck[RandomNum].Health) + "Mana: " + Convert.ToString(CardDeck[RandomNum].Mana);
+            int RandomNum1 = num.Next(1, 31);
+            btnUser2Hand.Text = CardDeck[RandomNum1].Name + "\n" + "Attack: " + Convert.ToString(CardDeck[RandomNum1].Attack) + "Health: " + Convert.ToString(CardDeck[RandomNum1].Health) + "Mana: " + Convert.ToString(CardDeck[RandomNum1].Mana);
+            int RandomNum2 = num.Next(1, 31);
+            btnUser3Hand.Text = CardDeck[RandomNum2].Name + "\n" + "Attack: " + Convert.ToString(CardDeck[RandomNum2].Attack) + "Health: " + Convert.ToString(CardDeck[RandomNum2].Health) + "Mana: " + Convert.ToString(CardDeck[RandomNum2].Mana);
         }
 
         Card[] CardDeck = new Card[30];
@@ -60,6 +69,11 @@ namespace Hearthstone
         }
         enum CardName { Golemagg = 1, Abomination, Acidmaw, Acolyte, Acornbearer, Alexstrasza, Alleycat, Watcher, Anomalus, Baku, Lynchen, Geddon, Rivendare,
         Sentry, Djinn, Nullifier, Guardian, Racketeer, Hydra, Gunspire, Pixie, Pirate, Corruptor, Cultist, Witch, Raptor, Thalnos, Corsair, Howler, Sniper}
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
     public class Card
     {

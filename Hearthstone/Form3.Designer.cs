@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnUser1Hand = new System.Windows.Forms.Button();
+            this.btnUser2Hand = new System.Windows.Forms.Button();
+            this.btnUser3Hand = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
+            this.btnUser5Hand = new System.Windows.Forms.Button();
+            this.btnUser10Hand = new System.Windows.Forms.Button();
+            this.btnUser9Hand = new System.Windows.Forms.Button();
+            this.btnUser8Hand = new System.Windows.Forms.Button();
+            this.btnUser7Hand = new System.Windows.Forms.Button();
+            this.btnUser6Hand = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
@@ -66,99 +66,101 @@
             this.button34 = new System.Windows.Forms.Button();
             this.button35 = new System.Windows.Forms.Button();
             this.button36 = new System.Windows.Forms.Button();
-            this.button37 = new System.Windows.Forms.Button();
+            this.btnUserHero = new System.Windows.Forms.Button();
             this.button38 = new System.Windows.Forms.Button();
+            this.lblUserHeroHealth = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // btnUser1Hand
             // 
-            this.button1.Font = new System.Drawing.Font("RomanT", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(174, 689);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(84, 110);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnUser1Hand.Font = new System.Drawing.Font("RomanT", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUser1Hand.Location = new System.Drawing.Point(174, 689);
+            this.btnUser1Hand.Name = "btnUser1Hand";
+            this.btnUser1Hand.Size = new System.Drawing.Size(84, 110);
+            this.btnUser1Hand.TabIndex = 0;
+            this.btnUser1Hand.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnUser2Hand
             // 
-            this.button2.Font = new System.Drawing.Font("RomanT", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(264, 689);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(84, 110);
-            this.button2.TabIndex = 1;
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnUser2Hand.Font = new System.Drawing.Font("RomanT", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUser2Hand.Location = new System.Drawing.Point(264, 689);
+            this.btnUser2Hand.Name = "btnUser2Hand";
+            this.btnUser2Hand.Size = new System.Drawing.Size(84, 110);
+            this.btnUser2Hand.TabIndex = 1;
+            this.btnUser2Hand.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnUser3Hand
             // 
-            this.button3.Font = new System.Drawing.Font("RomanT", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(354, 689);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(84, 110);
-            this.button3.TabIndex = 2;
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnUser3Hand.Font = new System.Drawing.Font("RomanT", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUser3Hand.Location = new System.Drawing.Point(354, 689);
+            this.btnUser3Hand.Name = "btnUser3Hand";
+            this.btnUser3Hand.Size = new System.Drawing.Size(84, 110);
+            this.btnUser3Hand.TabIndex = 2;
+            this.btnUser3Hand.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
-            this.button4.Font = new System.Drawing.Font("RomanT", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Font = new System.Drawing.Font("RomanT", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Location = new System.Drawing.Point(444, 689);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(84, 110);
             this.button4.TabIndex = 3;
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button5
+            // btnUser5Hand
             // 
-            this.button5.Font = new System.Drawing.Font("RomanT", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(534, 689);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(84, 110);
-            this.button5.TabIndex = 4;
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnUser5Hand.Font = new System.Drawing.Font("RomanT", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUser5Hand.Location = new System.Drawing.Point(534, 689);
+            this.btnUser5Hand.Name = "btnUser5Hand";
+            this.btnUser5Hand.Size = new System.Drawing.Size(84, 110);
+            this.btnUser5Hand.TabIndex = 4;
+            this.btnUser5Hand.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // btnUser10Hand
             // 
-            this.button6.Font = new System.Drawing.Font("RomanT", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(984, 689);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(84, 110);
-            this.button6.TabIndex = 9;
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnUser10Hand.Font = new System.Drawing.Font("RomanT", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUser10Hand.Location = new System.Drawing.Point(984, 689);
+            this.btnUser10Hand.Name = "btnUser10Hand";
+            this.btnUser10Hand.Size = new System.Drawing.Size(84, 110);
+            this.btnUser10Hand.TabIndex = 9;
+            this.btnUser10Hand.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // btnUser9Hand
             // 
-            this.button7.Font = new System.Drawing.Font("RomanT", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(894, 689);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(84, 110);
-            this.button7.TabIndex = 8;
-            this.button7.UseVisualStyleBackColor = true;
+            this.btnUser9Hand.Font = new System.Drawing.Font("RomanT", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUser9Hand.Location = new System.Drawing.Point(894, 689);
+            this.btnUser9Hand.Name = "btnUser9Hand";
+            this.btnUser9Hand.Size = new System.Drawing.Size(84, 110);
+            this.btnUser9Hand.TabIndex = 8;
+            this.btnUser9Hand.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // btnUser8Hand
             // 
-            this.button8.Font = new System.Drawing.Font("RomanT", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(804, 689);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(84, 110);
-            this.button8.TabIndex = 7;
-            this.button8.UseVisualStyleBackColor = true;
+            this.btnUser8Hand.Font = new System.Drawing.Font("RomanT", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUser8Hand.Location = new System.Drawing.Point(804, 689);
+            this.btnUser8Hand.Name = "btnUser8Hand";
+            this.btnUser8Hand.Size = new System.Drawing.Size(84, 110);
+            this.btnUser8Hand.TabIndex = 7;
+            this.btnUser8Hand.UseVisualStyleBackColor = true;
             // 
-            // button9
+            // btnUser7Hand
             // 
-            this.button9.Font = new System.Drawing.Font("RomanT", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(714, 689);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(84, 110);
-            this.button9.TabIndex = 6;
-            this.button9.UseVisualStyleBackColor = true;
+            this.btnUser7Hand.Font = new System.Drawing.Font("RomanT", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUser7Hand.Location = new System.Drawing.Point(714, 689);
+            this.btnUser7Hand.Name = "btnUser7Hand";
+            this.btnUser7Hand.Size = new System.Drawing.Size(84, 110);
+            this.btnUser7Hand.TabIndex = 6;
+            this.btnUser7Hand.UseVisualStyleBackColor = true;
             // 
-            // button10
+            // btnUser6Hand
             // 
-            this.button10.Font = new System.Drawing.Font("RomanT", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.Location = new System.Drawing.Point(624, 689);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(84, 110);
-            this.button10.TabIndex = 5;
-            this.button10.UseVisualStyleBackColor = true;
+            this.btnUser6Hand.Font = new System.Drawing.Font("RomanT", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUser6Hand.Location = new System.Drawing.Point(624, 689);
+            this.btnUser6Hand.Name = "btnUser6Hand";
+            this.btnUser6Hand.Size = new System.Drawing.Size(84, 110);
+            this.btnUser6Hand.TabIndex = 5;
+            this.btnUser6Hand.UseVisualStyleBackColor = true;
             // 
             // button11
             // 
@@ -441,14 +443,15 @@
             this.button36.TabIndex = 31;
             this.button36.UseVisualStyleBackColor = true;
             // 
-            // button37
+            // btnUserHero
             // 
-            this.button37.Location = new System.Drawing.Point(554, 531);
-            this.button37.Name = "button37";
-            this.button37.Size = new System.Drawing.Size(131, 152);
-            this.button37.TabIndex = 38;
-            this.button37.Text = " ";
-            this.button37.UseVisualStyleBackColor = true;
+            this.btnUserHero.Font = new System.Drawing.Font("RomanT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUserHero.Location = new System.Drawing.Point(554, 531);
+            this.btnUserHero.Name = "btnUserHero";
+            this.btnUserHero.Size = new System.Drawing.Size(131, 152);
+            this.btnUserHero.TabIndex = 38;
+            this.btnUserHero.Text = " ";
+            this.btnUserHero.UseVisualStyleBackColor = true;
             // 
             // button38
             // 
@@ -460,14 +463,23 @@
             this.button38.Text = " ";
             this.button38.UseVisualStyleBackColor = true;
             // 
+            // lblUserHeroHealth
+            // 
+            this.lblUserHeroHealth.AutoSize = true;
+            this.lblUserHeroHealth.Location = new System.Drawing.Point(691, 670);
+            this.lblUserHeroHealth.Name = "lblUserHeroHealth";
+            this.lblUserHeroHealth.Size = new System.Drawing.Size(0, 13);
+            this.lblUserHeroHealth.TabIndex = 40;
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Bisque;
             this.ClientSize = new System.Drawing.Size(1276, 811);
+            this.Controls.Add(this.lblUserHeroHealth);
             this.Controls.Add(this.button38);
-            this.Controls.Add(this.button37);
+            this.Controls.Add(this.btnUserHero);
             this.Controls.Add(this.button30);
             this.Controls.Add(this.button31);
             this.Controls.Add(this.button32);
@@ -496,16 +508,16 @@
             this.Controls.Add(this.button18);
             this.Controls.Add(this.button19);
             this.Controls.Add(this.button20);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.btnUser10Hand);
+            this.Controls.Add(this.btnUser9Hand);
+            this.Controls.Add(this.btnUser8Hand);
+            this.Controls.Add(this.btnUser7Hand);
+            this.Controls.Add(this.btnUser6Hand);
+            this.Controls.Add(this.btnUser5Hand);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnUser3Hand);
+            this.Controls.Add(this.btnUser2Hand);
+            this.Controls.Add(this.btnUser1Hand);
             this.Name = "Form3";
             this.Text = "Battle";
             this.ResumeLayout(false);
@@ -515,16 +527,16 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnUser1Hand;
+        private System.Windows.Forms.Button btnUser2Hand;
+        private System.Windows.Forms.Button btnUser3Hand;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button btnUser5Hand;
+        private System.Windows.Forms.Button btnUser10Hand;
+        private System.Windows.Forms.Button btnUser9Hand;
+        private System.Windows.Forms.Button btnUser8Hand;
+        private System.Windows.Forms.Button btnUser7Hand;
+        private System.Windows.Forms.Button btnUser6Hand;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button13;
@@ -553,7 +565,8 @@
         private System.Windows.Forms.Button button34;
         private System.Windows.Forms.Button button35;
         private System.Windows.Forms.Button button36;
-        private System.Windows.Forms.Button button37;
+        private System.Windows.Forms.Button btnUserHero;
         private System.Windows.Forms.Button button38;
+        private System.Windows.Forms.Label lblUserHeroHealth;
     }
 }
