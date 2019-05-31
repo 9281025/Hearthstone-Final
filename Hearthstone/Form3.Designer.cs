@@ -291,6 +291,7 @@
             this.button21.TabIndex = 22;
             this.button21.Text = "Draw\r\nA\r\nCard";
             this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
             // button22
             // 
@@ -445,7 +446,7 @@
             // 
             // btnUserHero
             // 
-            this.btnUserHero.Font = new System.Drawing.Font("RomanT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUserHero.Font = new System.Drawing.Font("RomanT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUserHero.Location = new System.Drawing.Point(554, 531);
             this.btnUserHero.Name = "btnUserHero";
             this.btnUserHero.Size = new System.Drawing.Size(131, 152);
@@ -456,6 +457,7 @@
             // button38
             // 
             this.button38.Enabled = false;
+            this.button38.Font = new System.Drawing.Font("RomanT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button38.Location = new System.Drawing.Point(554, 128);
             this.button38.Name = "button38";
             this.button38.Size = new System.Drawing.Size(131, 152);
@@ -520,6 +522,7 @@
             this.Controls.Add(this.btnUser1Hand);
             this.Name = "Form3";
             this.Text = "Battle";
+            this.Load += new System.EventHandler(this.Form3_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
