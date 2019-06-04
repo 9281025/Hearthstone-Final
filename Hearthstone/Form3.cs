@@ -19,14 +19,23 @@ namespace Hearthstone
             {
                 RandomizeCards(i);
             }
+            for (int s = 0; s < 30; s++)
+            {
+                ComputerRandomizeCards(s);
+            }
             string HeroName = Hero.Name;
             int HeroHealth = Hero.Health;
+            int ComputerHeroHealth = 30;
             string HeroPower = Hero.HeroPower;
             btnUserHero.Text = HeroName + "\n" + "\n" + HeroPower;
             lblUserHeroHealth.Text = "Health: " + Convert.ToString(HeroHealth);
             for(int g = 0; g < 10; g++)
             {
                 PlayerHand[g] = new Card("", 0, 0, 0);
+            }
+            for (int h = 0; h < 10; h++)
+            {
+                ComputerHand[h] = new Card("", 0, 0, 0);
             }
             DrawCard();
             DrawCard();
@@ -154,40 +163,37 @@ namespace Hearthstone
         }
         public void ComputerDrawCard()
         {
-            int Flag = 0;
-            int RandomNum = num.Next(1, 31);
-            try
+            int Flag1 = 0;
+            int RandomNum1 = num.Next(1, 31);
+            for (int i = 0; i < 10; i++)
             {
-                for (int i = 0; i < 10; i++)
+                if (Flag1 == 0)
                 {
-                    if (Flag == 0)
+                    if (ComputerHand[i].Name == "" && ComputerCardDeck[RandomNum1].Name != "")
                     {
-                        if (ComputerHand[i].Name == "" && ComputerCardDeck[RandomNum].Name != "")
-                        {
-                            ComputerHand[i].Name = ComputerCardDeck[RandomNum].Name;
-                            ComputerHand[i].Attack = ComputerCardDeck[RandomNum].Attack;
-                            ComputerHand[i].Health = ComputerCardDeck[RandomNum].Health;
-                            ComputerHand[i].Mana = ComputerCardDeck[RandomNum].Mana;
-                            ComputerCardDeck[RandomNum].Name = "";
-                            btn1Comp.Text = ComputerHand[0].Name + "\n" + "Attack: " + ComputerHand[0].Attack + "\n" + "Health: " + ComputerHand[0].Health + "\n" + "Mana: " + ComputerHand[0].Mana;
-                            btn2Comp.Text = ComputerHand[1].Name + "\n" + "Attack: " + ComputerHand[1].Attack + "\n" + "Health: " + ComputerHand[1].Health + "\n" + "Mana: " + ComputerHand[1].Mana;
-                            btn3Comp.Text = ComputerHand[2].Name + "\n" + "Attack: " + ComputerHand[2].Attack + "\n" + "Health: " + ComputerHand[2].Health + "\n" + "Mana: " + ComputerHand[2].Mana;
-                            btn4Comp.Text = ComputerHand[3].Name + "\n" + "Attack: " + ComputerHand[3].Attack + "\n" + "Health: " + ComputerHand[3].Health + "\n" + "Mana: " + ComputerHand[3].Mana;
-                            btn5Comp.Text = ComputerHand[4].Name + "\n" + "Attack: " + ComputerHand[4].Attack + "\n" + "Health: " + ComputerHand[4].Health + "\n" + "Mana: " + ComputerHand[4].Mana;
-                            btn6Comp.Text = ComputerHand[5].Name + "\n" + "Attack: " + ComputerHand[5].Attack + "\n" + "Health: " + ComputerHand[5].Health + "\n" + "Mana: " + ComputerHand[5].Mana;
-                            btn7Comp.Text = ComputerHand[6].Name + "\n" + "Attack: " + ComputerHand[6].Attack + "\n" + "Health: " + ComputerHand[6].Health + "\n" + "Mana: " + ComputerHand[6].Mana;
-                            btn8Comp.Text = ComputerHand[7].Name + "\n" + "Attack: " + ComputerHand[7].Attack + "\n" + "Health: " + ComputerHand[7].Health + "\n" + "Mana: " + ComputerHand[7].Mana;
-                            btn9Comp.Text = ComputerHand[8].Name + "\n" + "Attack: " + ComputerHand[8].Attack + "\n" + "Health: " + ComputerHand[8].Health + "\n" + "Mana: " + ComputerHand[8].Mana;
-                            btn10Comp.Text = ComputerHand[9].Name + "\n" + "Attack: " + ComputerHand[9].Attack + "\n" + "Health: " + ComputerHand[9].Health + "\n" + "Mana: " + ComputerHand[9].Mana;
-                            ComputerShowCards(i);
-                            Flag = 1;
-                        }
+                        ComputerHand[i].Name = ComputerCardDeck[RandomNum1].Name;
+                        ComputerHand[i].Attack = ComputerCardDeck[RandomNum1].Attack;
+                        ComputerHand[i].Health = ComputerCardDeck[RandomNum1].Health;
+                        ComputerHand[i].Mana = ComputerCardDeck[RandomNum1].Mana;
+                        ComputerCardDeck[RandomNum1].Name = "";
+                        btn1Comp.Text = ComputerHand[0].Name + "\n" + "Attack: " + ComputerHand[0].Attack + "\n" + "Health: " + ComputerHand[0].Health + "\n" + "Mana: " + ComputerHand[0].Mana;
+                        btn2Comp.Text = ComputerHand[1].Name + "\n" + "Attack: " + ComputerHand[1].Attack + "\n" + "Health: " + ComputerHand[1].Health + "\n" + "Mana: " + ComputerHand[1].Mana;
+                        btn3Comp.Text = ComputerHand[2].Name + "\n" + "Attack: " + ComputerHand[2].Attack + "\n" + "Health: " + ComputerHand[2].Health + "\n" + "Mana: " + ComputerHand[2].Mana;
+                        btn4Comp.Text = ComputerHand[3].Name + "\n" + "Attack: " + ComputerHand[3].Attack + "\n" + "Health: " + ComputerHand[3].Health + "\n" + "Mana: " + ComputerHand[3].Mana;
+                        btn5Comp.Text = ComputerHand[4].Name + "\n" + "Attack: " + ComputerHand[4].Attack + "\n" + "Health: " + ComputerHand[4].Health + "\n" + "Mana: " + ComputerHand[4].Mana;
+                        btn6Comp.Text = ComputerHand[5].Name + "\n" + "Attack: " + ComputerHand[5].Attack + "\n" + "Health: " + ComputerHand[5].Health + "\n" + "Mana: " + ComputerHand[5].Mana;
+                        btn7Comp.Text = ComputerHand[6].Name + "\n" + "Attack: " + ComputerHand[6].Attack + "\n" + "Health: " + ComputerHand[6].Health + "\n" + "Mana: " + ComputerHand[6].Mana;
+                        btn8Comp.Text = ComputerHand[7].Name + "\n" + "Attack: " + ComputerHand[7].Attack + "\n" + "Health: " + ComputerHand[7].Health + "\n" + "Mana: " + ComputerHand[7].Mana;
+                        btn9Comp.Text = ComputerHand[8].Name + "\n" + "Attack: " + ComputerHand[8].Attack + "\n" + "Health: " + ComputerHand[8].Health + "\n" + "Mana: " + ComputerHand[8].Mana;
+                        btn10Comp.Text = ComputerHand[9].Name + "\n" + "Attack: " + ComputerHand[9].Attack + "\n" + "Health: " + ComputerHand[9].Health + "\n" + "Mana: " + ComputerHand[9].Mana;
+                        ComputerShowCards(i);
+                        Flag1 = 1;
+                    }
+                    else
+                    {
+
                     }
                 }
-            }
-            catch
-            {
-               
             }
         }
 
@@ -485,7 +491,7 @@ namespace Hearthstone
         }
 
         Card[] BattleCards = new Card[7];
-        
+        Card[] ComputerBattleCards = new Card[7];
 
         private void btn1Slot_Click(object sender, EventArgs e)
         {
@@ -534,6 +540,53 @@ namespace Hearthstone
             BattleCards[6] = new Card(HoldingCard.Name, HoldingCard.Attack, HoldingCard.Health, HoldingCard.Mana);
             btn7Slot.Text = HoldingCard.Name + "\n" + "Attack: " + HoldingCard.Attack + "\n" + "Health: " + HoldingCard.Health + "\n" + "Mana: " + HoldingCard.Mana;
             DisableSlotCards();
+        }
+
+        public void ComputerTurn()
+        {
+            int intRandom = num.Next(1, 3);
+            if(intRandom == 1)
+            {
+                ComputerDrawCard();
+                int c = num.Next(0, 10);
+                int d = num.Next(0, 8);
+                ComputerBattleCards[d] = new Card(ComputerHand[c].Name, ComputerHand[c].Attack, ComputerHand[c].Health, ComputerHand[c].Mana);
+                if(d == 0)
+                {
+                    btn1ComputerSlot.Text = ComputerHand[c].Name + "\n" + "Attack: " + ComputerHand[c].Attack + "\n" + "Health: " + ComputerHand[c].Health + "\n" + "Mana: " + ComputerHand[c].Mana;
+                }
+                else if(d == 1)
+                {
+                    btn2ComputerSlot.Text = ComputerHand[c].Name + "\n" + "Attack: " + ComputerHand[c].Attack + "\n" + "Health: " + ComputerHand[c].Health + "\n" + "Mana: " + ComputerHand[c].Mana;
+                }
+                else if (d == 2)
+                {
+                    btn3ComputerSlot.Text = ComputerHand[c].Name + "\n" + "Attack: " + ComputerHand[c].Attack + "\n" + "Health: " + ComputerHand[c].Health + "\n" + "Mana: " + ComputerHand[c].Mana;
+                }
+                else if (d == 3)
+                {
+                    btn4ComputerSlot.Text = ComputerHand[c].Name + "\n" + "Attack: " + ComputerHand[c].Attack + "\n" + "Health: " + ComputerHand[c].Health + "\n" + "Mana: " + ComputerHand[c].Mana;
+                }
+                else if (d == 4)
+                {
+                    btn5ComputerSlot.Text = ComputerHand[c].Name + "\n" + "Attack: " + ComputerHand[c].Attack + "\n" + "Health: " + ComputerHand[c].Health + "\n" + "Mana: " + ComputerHand[c].Mana;
+                }
+                else if (d == 5)
+                {
+                    btn6ComputerSlot.Text = ComputerHand[c].Name + "\n" + "Attack: " + ComputerHand[c].Attack + "\n" + "Health: " + ComputerHand[c].Health + "\n" + "Mana: " + ComputerHand[c].Mana;
+                }
+                else if (d == 6)
+                {
+                    button30.Text = ComputerHand[c].Name + "\n" + "Attack: " + ComputerHand[c].Attack + "\n" + "Health: " + ComputerHand[c].Health + "\n" + "Mana: " + ComputerHand[c].Mana;
+                }
+            }
+            else(intRandom == 2)
+            
+        }
+
+        private void button30_Click(object sender, EventArgs e)
+        {
+
         }
     }
     public class Card

@@ -60,15 +60,16 @@
             this.btn2Slot = new System.Windows.Forms.Button();
             this.btn1Slot = new System.Windows.Forms.Button();
             this.button30 = new System.Windows.Forms.Button();
-            this.button31 = new System.Windows.Forms.Button();
-            this.button32 = new System.Windows.Forms.Button();
-            this.button33 = new System.Windows.Forms.Button();
-            this.button34 = new System.Windows.Forms.Button();
-            this.button35 = new System.Windows.Forms.Button();
-            this.button36 = new System.Windows.Forms.Button();
+            this.btn6ComputerSlot = new System.Windows.Forms.Button();
+            this.btn5ComputerSlot = new System.Windows.Forms.Button();
+            this.btn4ComputerSlot = new System.Windows.Forms.Button();
+            this.btn3ComputerSlot = new System.Windows.Forms.Button();
+            this.btn2ComputerSlot = new System.Windows.Forms.Button();
+            this.btn1ComputerSlot = new System.Windows.Forms.Button();
             this.btnUserHero = new System.Windows.Forms.Button();
             this.button38 = new System.Windows.Forms.Button();
             this.lblUserHeroHealth = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnUser1Hand
@@ -183,103 +184,103 @@
             // 
             // btn10Comp
             // 
-            this.btn10Comp.Enabled = false;
-            this.btn10Comp.Font = new System.Drawing.Font("RomanT", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn10Comp.Font = new System.Drawing.Font("RomanT", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn10Comp.Location = new System.Drawing.Point(984, 12);
             this.btn10Comp.Name = "btn10Comp";
             this.btn10Comp.Size = new System.Drawing.Size(84, 110);
             this.btn10Comp.TabIndex = 19;
             this.btn10Comp.UseVisualStyleBackColor = true;
+            this.btn10Comp.Visible = false;
             // 
             // btn9Comp
             // 
-            this.btn9Comp.Enabled = false;
-            this.btn9Comp.Font = new System.Drawing.Font("RomanT", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn9Comp.Font = new System.Drawing.Font("RomanT", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn9Comp.Location = new System.Drawing.Point(894, 12);
             this.btn9Comp.Name = "btn9Comp";
             this.btn9Comp.Size = new System.Drawing.Size(84, 110);
             this.btn9Comp.TabIndex = 18;
             this.btn9Comp.UseVisualStyleBackColor = true;
+            this.btn9Comp.Visible = false;
             // 
             // btn8Comp
             // 
-            this.btn8Comp.Enabled = false;
-            this.btn8Comp.Font = new System.Drawing.Font("RomanT", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn8Comp.Font = new System.Drawing.Font("RomanT", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn8Comp.Location = new System.Drawing.Point(804, 12);
             this.btn8Comp.Name = "btn8Comp";
             this.btn8Comp.Size = new System.Drawing.Size(84, 110);
             this.btn8Comp.TabIndex = 17;
             this.btn8Comp.UseVisualStyleBackColor = true;
+            this.btn8Comp.Visible = false;
             // 
             // btn7Comp
             // 
-            this.btn7Comp.Enabled = false;
-            this.btn7Comp.Font = new System.Drawing.Font("RomanT", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn7Comp.Font = new System.Drawing.Font("RomanT", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn7Comp.Location = new System.Drawing.Point(714, 12);
             this.btn7Comp.Name = "btn7Comp";
             this.btn7Comp.Size = new System.Drawing.Size(84, 110);
             this.btn7Comp.TabIndex = 16;
             this.btn7Comp.UseVisualStyleBackColor = true;
+            this.btn7Comp.Visible = false;
             // 
             // btn6Comp
             // 
-            this.btn6Comp.Enabled = false;
-            this.btn6Comp.Font = new System.Drawing.Font("RomanT", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn6Comp.Font = new System.Drawing.Font("RomanT", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn6Comp.Location = new System.Drawing.Point(624, 12);
             this.btn6Comp.Name = "btn6Comp";
             this.btn6Comp.Size = new System.Drawing.Size(84, 110);
             this.btn6Comp.TabIndex = 15;
             this.btn6Comp.UseVisualStyleBackColor = true;
+            this.btn6Comp.Visible = false;
             // 
             // btn5Comp
             // 
-            this.btn5Comp.Enabled = false;
-            this.btn5Comp.Font = new System.Drawing.Font("RomanT", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn5Comp.Font = new System.Drawing.Font("RomanT", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn5Comp.Location = new System.Drawing.Point(534, 12);
             this.btn5Comp.Name = "btn5Comp";
             this.btn5Comp.Size = new System.Drawing.Size(84, 110);
             this.btn5Comp.TabIndex = 14;
             this.btn5Comp.UseVisualStyleBackColor = true;
+            this.btn5Comp.Visible = false;
             // 
             // btn4Comp
             // 
-            this.btn4Comp.Enabled = false;
-            this.btn4Comp.Font = new System.Drawing.Font("RomanT", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn4Comp.Font = new System.Drawing.Font("RomanT", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn4Comp.Location = new System.Drawing.Point(444, 12);
             this.btn4Comp.Name = "btn4Comp";
             this.btn4Comp.Size = new System.Drawing.Size(84, 110);
             this.btn4Comp.TabIndex = 13;
             this.btn4Comp.UseVisualStyleBackColor = true;
+            this.btn4Comp.Visible = false;
             // 
             // btn3Comp
             // 
-            this.btn3Comp.Enabled = false;
-            this.btn3Comp.Font = new System.Drawing.Font("RomanT", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn3Comp.Font = new System.Drawing.Font("RomanT", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn3Comp.Location = new System.Drawing.Point(354, 12);
             this.btn3Comp.Name = "btn3Comp";
             this.btn3Comp.Size = new System.Drawing.Size(84, 110);
             this.btn3Comp.TabIndex = 12;
             this.btn3Comp.UseVisualStyleBackColor = true;
+            this.btn3Comp.Visible = false;
             // 
             // btn2Comp
             // 
-            this.btn2Comp.Enabled = false;
-            this.btn2Comp.Font = new System.Drawing.Font("RomanT", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn2Comp.Font = new System.Drawing.Font("RomanT", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn2Comp.Location = new System.Drawing.Point(264, 12);
             this.btn2Comp.Name = "btn2Comp";
             this.btn2Comp.Size = new System.Drawing.Size(84, 110);
             this.btn2Comp.TabIndex = 11;
             this.btn2Comp.UseVisualStyleBackColor = true;
+            this.btn2Comp.Visible = false;
             // 
             // btn1Comp
             // 
-            this.btn1Comp.Enabled = false;
-            this.btn1Comp.Font = new System.Drawing.Font("RomanT", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn1Comp.Font = new System.Drawing.Font("RomanT", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn1Comp.Location = new System.Drawing.Point(174, 12);
             this.btn1Comp.Name = "btn1Comp";
             this.btn1Comp.Size = new System.Drawing.Size(84, 110);
             this.btn1Comp.TabIndex = 10;
             this.btn1Comp.UseVisualStyleBackColor = true;
+            this.btn1Comp.Visible = false;
             // 
             // label1
             // 
@@ -403,72 +404,73 @@
             // button30
             // 
             this.button30.Enabled = false;
-            this.button30.Font = new System.Drawing.Font("RomanT", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button30.Font = new System.Drawing.Font("RomanT", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button30.Location = new System.Drawing.Point(846, 293);
             this.button30.Name = "button30";
             this.button30.Size = new System.Drawing.Size(84, 110);
             this.button30.TabIndex = 37;
             this.button30.UseVisualStyleBackColor = true;
+            this.button30.Click += new System.EventHandler(this.button30_Click);
             // 
-            // button31
+            // btn6ComputerSlot
             // 
-            this.button31.Enabled = false;
-            this.button31.Font = new System.Drawing.Font("RomanT", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button31.Location = new System.Drawing.Point(756, 293);
-            this.button31.Name = "button31";
-            this.button31.Size = new System.Drawing.Size(84, 110);
-            this.button31.TabIndex = 36;
-            this.button31.UseVisualStyleBackColor = true;
+            this.btn6ComputerSlot.Enabled = false;
+            this.btn6ComputerSlot.Font = new System.Drawing.Font("RomanT", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn6ComputerSlot.Location = new System.Drawing.Point(756, 293);
+            this.btn6ComputerSlot.Name = "btn6ComputerSlot";
+            this.btn6ComputerSlot.Size = new System.Drawing.Size(84, 110);
+            this.btn6ComputerSlot.TabIndex = 36;
+            this.btn6ComputerSlot.UseVisualStyleBackColor = true;
             // 
-            // button32
+            // btn5ComputerSlot
             // 
-            this.button32.Enabled = false;
-            this.button32.Font = new System.Drawing.Font("RomanT", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button32.Location = new System.Drawing.Point(666, 293);
-            this.button32.Name = "button32";
-            this.button32.Size = new System.Drawing.Size(84, 110);
-            this.button32.TabIndex = 35;
-            this.button32.UseVisualStyleBackColor = true;
+            this.btn5ComputerSlot.Enabled = false;
+            this.btn5ComputerSlot.Font = new System.Drawing.Font("RomanT", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn5ComputerSlot.Location = new System.Drawing.Point(666, 293);
+            this.btn5ComputerSlot.Name = "btn5ComputerSlot";
+            this.btn5ComputerSlot.Size = new System.Drawing.Size(84, 110);
+            this.btn5ComputerSlot.TabIndex = 35;
+            this.btn5ComputerSlot.UseVisualStyleBackColor = true;
             // 
-            // button33
+            // btn4ComputerSlot
             // 
-            this.button33.Enabled = false;
-            this.button33.Font = new System.Drawing.Font("RomanT", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button33.Location = new System.Drawing.Point(576, 293);
-            this.button33.Name = "button33";
-            this.button33.Size = new System.Drawing.Size(84, 110);
-            this.button33.TabIndex = 34;
-            this.button33.UseVisualStyleBackColor = true;
+            this.btn4ComputerSlot.Enabled = false;
+            this.btn4ComputerSlot.Font = new System.Drawing.Font("RomanT", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn4ComputerSlot.Location = new System.Drawing.Point(576, 293);
+            this.btn4ComputerSlot.Name = "btn4ComputerSlot";
+            this.btn4ComputerSlot.Size = new System.Drawing.Size(84, 110);
+            this.btn4ComputerSlot.TabIndex = 34;
+            this.btn4ComputerSlot.UseVisualStyleBackColor = true;
             // 
-            // button34
+            // btn3ComputerSlot
             // 
-            this.button34.Enabled = false;
-            this.button34.Font = new System.Drawing.Font("RomanT", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button34.Location = new System.Drawing.Point(486, 293);
-            this.button34.Name = "button34";
-            this.button34.Size = new System.Drawing.Size(84, 110);
-            this.button34.TabIndex = 33;
-            this.button34.UseVisualStyleBackColor = true;
+            this.btn3ComputerSlot.Enabled = false;
+            this.btn3ComputerSlot.Font = new System.Drawing.Font("RomanT", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn3ComputerSlot.Location = new System.Drawing.Point(486, 293);
+            this.btn3ComputerSlot.Name = "btn3ComputerSlot";
+            this.btn3ComputerSlot.Size = new System.Drawing.Size(84, 110);
+            this.btn3ComputerSlot.TabIndex = 33;
+            this.btn3ComputerSlot.UseVisualStyleBackColor = true;
             // 
-            // button35
+            // btn2ComputerSlot
             // 
-            this.button35.Enabled = false;
-            this.button35.Font = new System.Drawing.Font("RomanT", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button35.Location = new System.Drawing.Point(396, 293);
-            this.button35.Name = "button35";
-            this.button35.Size = new System.Drawing.Size(84, 110);
-            this.button35.TabIndex = 32;
-            this.button35.UseVisualStyleBackColor = true;
+            this.btn2ComputerSlot.Enabled = false;
+            this.btn2ComputerSlot.Font = new System.Drawing.Font("RomanT", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn2ComputerSlot.Location = new System.Drawing.Point(396, 293);
+            this.btn2ComputerSlot.Name = "btn2ComputerSlot";
+            this.btn2ComputerSlot.Size = new System.Drawing.Size(84, 110);
+            this.btn2ComputerSlot.TabIndex = 32;
+            this.btn2ComputerSlot.UseVisualStyleBackColor = true;
             // 
-            // button36
+            // btn1ComputerSlot
             // 
-            this.button36.Enabled = false;
-            this.button36.Font = new System.Drawing.Font("RomanT", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button36.Location = new System.Drawing.Point(306, 293);
-            this.button36.Name = "button36";
-            this.button36.Size = new System.Drawing.Size(84, 110);
-            this.button36.TabIndex = 31;
-            this.button36.UseVisualStyleBackColor = true;
+            this.btn1ComputerSlot.Enabled = false;
+            this.btn1ComputerSlot.Font = new System.Drawing.Font("RomanT", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn1ComputerSlot.Location = new System.Drawing.Point(306, 293);
+            this.btn1ComputerSlot.Name = "btn1ComputerSlot";
+            this.btn1ComputerSlot.Size = new System.Drawing.Size(84, 110);
+            this.btn1ComputerSlot.TabIndex = 31;
+            this.btn1ComputerSlot.UseVisualStyleBackColor = true;
             // 
             // btnUserHero
             // 
@@ -488,7 +490,7 @@
             this.button38.Name = "button38";
             this.button38.Size = new System.Drawing.Size(131, 152);
             this.button38.TabIndex = 39;
-            this.button38.Text = " ";
+            this.button38.Text = " Dummy Hero";
             this.button38.UseVisualStyleBackColor = true;
             // 
             // lblUserHeroHealth
@@ -499,22 +501,32 @@
             this.lblUserHeroHealth.Size = new System.Drawing.Size(0, 13);
             this.lblUserHeroHealth.TabIndex = 40;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(691, 128);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(56, 13);
+            this.label2.TabIndex = 41;
+            this.label2.Text = "Health: 30";
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Bisque;
             this.ClientSize = new System.Drawing.Size(1276, 811);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.lblUserHeroHealth);
             this.Controls.Add(this.button38);
             this.Controls.Add(this.btnUserHero);
             this.Controls.Add(this.button30);
-            this.Controls.Add(this.button31);
-            this.Controls.Add(this.button32);
-            this.Controls.Add(this.button33);
-            this.Controls.Add(this.button34);
-            this.Controls.Add(this.button35);
-            this.Controls.Add(this.button36);
+            this.Controls.Add(this.btn6ComputerSlot);
+            this.Controls.Add(this.btn5ComputerSlot);
+            this.Controls.Add(this.btn4ComputerSlot);
+            this.Controls.Add(this.btn3ComputerSlot);
+            this.Controls.Add(this.btn2ComputerSlot);
+            this.Controls.Add(this.btn1ComputerSlot);
             this.Controls.Add(this.btn7Slot);
             this.Controls.Add(this.btn6Slot);
             this.Controls.Add(this.btn5Slot);
@@ -588,14 +600,15 @@
         private System.Windows.Forms.Button btn2Slot;
         private System.Windows.Forms.Button btn1Slot;
         private System.Windows.Forms.Button button30;
-        private System.Windows.Forms.Button button31;
-        private System.Windows.Forms.Button button32;
-        private System.Windows.Forms.Button button33;
-        private System.Windows.Forms.Button button34;
-        private System.Windows.Forms.Button button35;
-        private System.Windows.Forms.Button button36;
+        private System.Windows.Forms.Button btn6ComputerSlot;
+        private System.Windows.Forms.Button btn5ComputerSlot;
+        private System.Windows.Forms.Button btn4ComputerSlot;
+        private System.Windows.Forms.Button btn3ComputerSlot;
+        private System.Windows.Forms.Button btn2ComputerSlot;
+        private System.Windows.Forms.Button btn1ComputerSlot;
         private System.Windows.Forms.Button btnUserHero;
         private System.Windows.Forms.Button button38;
         private System.Windows.Forms.Label lblUserHeroHealth;
+        private System.Windows.Forms.Label label2;
     }
 }
