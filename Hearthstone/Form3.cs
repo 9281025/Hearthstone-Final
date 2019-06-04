@@ -492,54 +492,122 @@ namespace Hearthstone
 
         Card[] BattleCards = new Card[7];
         Card[] ComputerBattleCards = new Card[7];
+        Card BattleHoldingCard = new Card("", 0, 0, 0);
+
+        public void EnableComputerCards()
+        {
+            btn1ComputerSlot.Enabled = true;
+            btn2ComputerSlot.Enabled = true;
+            btn3ComputerSlot.Enabled = true;
+            btn4ComputerSlot.Enabled = true;
+            btn5ComputerSlot.Enabled = true;
+            btn6ComputerSlot.Enabled = true;
+            button30.Enabled = true;
+        }
 
         private void btn1Slot_Click(object sender, EventArgs e)
         {
-            BattleCards[0] = new Card(HoldingCard.Name, HoldingCard.Attack, HoldingCard.Health, HoldingCard.Mana);
-            btn1Slot.Text = HoldingCard.Name + "\n" + "Attack: " + HoldingCard.Attack + "\n" + "Health: " + HoldingCard.Health + "\n" + "Mana: " + HoldingCard.Mana;
-            DisableSlotCards();
+            if(btn1Slot.Text == "")
+            {
+                BattleCards[0] = new Card(HoldingCard.Name, HoldingCard.Attack, HoldingCard.Health, HoldingCard.Mana);
+                btn1Slot.Text = HoldingCard.Name + "\n" + "Attack: " + HoldingCard.Attack + "\n" + "Health: " + HoldingCard.Health + "\n" + "Mana: " + HoldingCard.Mana;
+                DisableSlotCards();
+            }
+            else
+            {
+                EnableComputerCards();
+                BattleHoldingCard = new Card(BattleCards[0].Name, BattleCards[0].Attack, BattleCards[0].Health, BattleCards[0].Mana);
+            }
         }
 
         private void btn2Slot_Click(object sender, EventArgs e)
         {
-            BattleCards[1] = new Card(HoldingCard.Name, HoldingCard.Attack, HoldingCard.Health, HoldingCard.Mana);
-            btn2Slot.Text = HoldingCard.Name + "\n" + "Attack: " + HoldingCard.Attack + "\n" + "Health: " + HoldingCard.Health + "\n" + "Mana: " + HoldingCard.Mana;
-            DisableSlotCards();
+            if (btn2Slot.Text == "")
+            {
+                BattleCards[1] = new Card(HoldingCard.Name, HoldingCard.Attack, HoldingCard.Health, HoldingCard.Mana);
+                btn2Slot.Text = HoldingCard.Name + "\n" + "Attack: " + HoldingCard.Attack + "\n" + "Health: " + HoldingCard.Health + "\n" + "Mana: " + HoldingCard.Mana;
+                DisableSlotCards();
+            }
+            else
+            {
+                EnableComputerCards();
+                BattleHoldingCard = new Card(BattleCards[1].Name, BattleCards[1].Attack, BattleCards[1].Health, BattleCards[1].Mana);
+            }
         }
 
         private void btn3Slot_Click(object sender, EventArgs e)
         {
-            BattleCards[2] = new Card(HoldingCard.Name, HoldingCard.Attack, HoldingCard.Health, HoldingCard.Mana);
-            btn3Slot.Text = HoldingCard.Name + "\n" + "Attack: " + HoldingCard.Attack + "\n" + "Health: " + HoldingCard.Health + "\n" + "Mana: " + HoldingCard.Mana;
-            DisableSlotCards();
+            if (btn3Slot.Text == "")
+            {
+                BattleCards[2] = new Card(HoldingCard.Name, HoldingCard.Attack, HoldingCard.Health, HoldingCard.Mana);
+                btn3Slot.Text = HoldingCard.Name + "\n" + "Attack: " + HoldingCard.Attack + "\n" + "Health: " + HoldingCard.Health + "\n" + "Mana: " + HoldingCard.Mana;
+                DisableSlotCards();
+            }
+            else
+            {
+                EnableComputerCards();
+                BattleHoldingCard = new Card(BattleCards[2].Name, BattleCards[2].Attack, BattleCards[2].Health, BattleCards[2].Mana);
+            }
         }
 
         private void btn4Slot_Click(object sender, EventArgs e)
         {
-            BattleCards[3] = new Card(HoldingCard.Name, HoldingCard.Attack, HoldingCard.Health, HoldingCard.Mana);
-            btn4Slot.Text = HoldingCard.Name + "\n" + "Attack: " + HoldingCard.Attack + "\n" + "Health: " + HoldingCard.Health + "\n" + "Mana: " + HoldingCard.Mana;
-            DisableSlotCards();
+            if (btn4Slot.Text == "")
+            {
+                BattleCards[3] = new Card(HoldingCard.Name, HoldingCard.Attack, HoldingCard.Health, HoldingCard.Mana);
+                btn4Slot.Text = HoldingCard.Name + "\n" + "Attack: " + HoldingCard.Attack + "\n" + "Health: " + HoldingCard.Health + "\n" + "Mana: " + HoldingCard.Mana;
+                DisableSlotCards();
+            }
+            else
+            {
+                EnableComputerCards();
+                BattleHoldingCard = new Card(BattleCards[3].Name, BattleCards[3].Attack, BattleCards[3].Health, BattleCards[3].Mana);
+            }
         }
 
         private void btn5Slot_Click(object sender, EventArgs e)
         {
-            BattleCards[4] = new Card(HoldingCard.Name, HoldingCard.Attack, HoldingCard.Health, HoldingCard.Mana);
-            btn5Slot.Text = HoldingCard.Name + "\n" + "Attack: " + HoldingCard.Attack + "\n" + "Health: " + HoldingCard.Health + "\n" + "Mana: " + HoldingCard.Mana;
-            DisableSlotCards();
+            if (btn5Slot.Text == "")
+            {
+                BattleCards[4] = new Card(HoldingCard.Name, HoldingCard.Attack, HoldingCard.Health, HoldingCard.Mana);
+                btn5Slot.Text = HoldingCard.Name + "\n" + "Attack: " + HoldingCard.Attack + "\n" + "Health: " + HoldingCard.Health + "\n" + "Mana: " + HoldingCard.Mana;
+                DisableSlotCards();
+            }
+            else
+            {
+                EnableComputerCards();
+                BattleHoldingCard = new Card(BattleCards[4].Name, BattleCards[4].Attack, BattleCards[4].Health, BattleCards[4].Mana);
+            }
         }
 
         private void btn6Slot_Click(object sender, EventArgs e)
         {
-            BattleCards[5] = new Card(HoldingCard.Name, HoldingCard.Attack, HoldingCard.Health, HoldingCard.Mana);
-            btn6Slot.Text = HoldingCard.Name + "\n" + "Attack: " + HoldingCard.Attack + "\n" + "Health: " + HoldingCard.Health + "\n" + "Mana: " + HoldingCard.Mana;
-            DisableSlotCards();
+            if (btn6Slot.Text == "")
+            {
+                BattleCards[5] = new Card(HoldingCard.Name, HoldingCard.Attack, HoldingCard.Health, HoldingCard.Mana);
+                btn6Slot.Text = HoldingCard.Name + "\n" + "Attack: " + HoldingCard.Attack + "\n" + "Health: " + HoldingCard.Health + "\n" + "Mana: " + HoldingCard.Mana;
+                DisableSlotCards();
+            }
+            else
+            {
+                EnableComputerCards();
+                BattleHoldingCard = new Card(BattleCards[5].Name, BattleCards[5].Attack, BattleCards[5].Health, BattleCards[5].Mana);
+            }
         }
 
         private void btn7Slot_Click(object sender, EventArgs e)
         {
-            BattleCards[6] = new Card(HoldingCard.Name, HoldingCard.Attack, HoldingCard.Health, HoldingCard.Mana);
-            btn7Slot.Text = HoldingCard.Name + "\n" + "Attack: " + HoldingCard.Attack + "\n" + "Health: " + HoldingCard.Health + "\n" + "Mana: " + HoldingCard.Mana;
-            DisableSlotCards();
+            if (btn7Slot.Text == "")
+            {
+                BattleCards[6] = new Card(HoldingCard.Name, HoldingCard.Attack, HoldingCard.Health, HoldingCard.Mana);
+                btn7Slot.Text = HoldingCard.Name + "\n" + "Attack: " + HoldingCard.Attack + "\n" + "Health: " + HoldingCard.Health + "\n" + "Mana: " + HoldingCard.Mana;
+                DisableSlotCards();
+            }
+            else
+            {
+                EnableComputerCards();
+                BattleHoldingCard = new Card(BattleCards[6].Name, BattleCards[6].Attack, BattleCards[6].Health, BattleCards[6].Mana);
+            }
         }
 
         public void ComputerTurn()
@@ -580,7 +648,31 @@ namespace Hearthstone
                     button30.Text = ComputerHand[c].Name + "\n" + "Attack: " + ComputerHand[c].Attack + "\n" + "Health: " + ComputerHand[c].Health + "\n" + "Mana: " + ComputerHand[c].Mana;
                 }
             }
-            else(intRandom == 2)
+            else if(intRandom == 2)
+            {
+                for (int n = 0; n < 8; n++)
+                {
+                    int flag2 = 0;
+                    int e = num.Next(0, 8);
+                    int f = num.Next(0, 8);
+                    if(flag2 == 0)
+                    {
+                        if (ComputerBattleCards[e].Name != "" && BattleCards[f].Name != "")
+                        {
+                            BattleCards[f].Health -= ComputerBattleCards[e].Attack;
+                            ComputerBattleCards[e].Health -= BattleCards[f].Health;
+                            btn1ComputerSlot.Text = ComputerBattleCards[0].Name + "\n" + "Attack: " + ComputerBattleCards[0].Attack + "\n" + "Health: " + ComputerBattleCards[0].Health + "\n" + "Mana: " + ComputerBattleCards[0].Mana;
+                            btn2ComputerSlot.Text = ComputerBattleCards[1].Name + "\n" + "Attack: " + ComputerBattleCards[1].Attack + "\n" + "Health: " + ComputerBattleCards[1].Health + "\n" + "Mana: " + ComputerBattleCards[1].Mana;
+                            btn3ComputerSlot.Text = ComputerBattleCards[2].Name + "\n" + "Attack: " + ComputerBattleCards[2].Attack + "\n" + "Health: " + ComputerBattleCards[2].Health + "\n" + "Mana: " + ComputerBattleCards[2].Mana;
+                            btn4ComputerSlot.Text = ComputerBattleCards[3].Name + "\n" + "Attack: " + ComputerBattleCards[3].Attack + "\n" + "Health: " + ComputerBattleCards[3].Health + "\n" + "Mana: " + ComputerBattleCards[3].Mana;
+                            btn5ComputerSlot.Text = ComputerBattleCards[4].Name + "\n" + "Attack: " + ComputerBattleCards[4].Attack + "\n" + "Health: " + ComputerBattleCards[4].Health + "\n" + "Mana: " + ComputerBattleCards[4].Mana;
+                            btn6ComputerSlot.Text = ComputerBattleCards[5].Name + "\n" + "Attack: " + ComputerBattleCards[5].Attack + "\n" + "Health: " + ComputerBattleCards[5].Health + "\n" + "Mana: " + ComputerBattleCards[5].Mana;
+                            button30.Text = ComputerBattleCards[6].Name + "\n" + "Attack: " + ComputerBattleCards[6].Attack + "\n" + "Health: " + ComputerBattleCards[6].Health + "\n" + "Mana: " + ComputerBattleCards[6].Mana;
+                            flag2 = 1;
+                        }
+                    }
+                }
+            }
             
         }
 
@@ -588,6 +680,14 @@ namespace Hearthstone
         {
 
         }
+
+        public void Battle()
+        {
+            
+
+
+        }
+
     }
     public class Card
     {
